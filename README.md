@@ -1,16 +1,28 @@
-Installation
+#Installation
 
 App uses MongoDB as database. 
 
-"npm install" installs both client and server dependencies
+`npm install` installs both client and server dependencies
 
-"npm run dev" starts both client and server in development mode
+`npm run dev` starts both client and server in development mode
+
+App currently uses port 3000 for frontend, port 1234 for backend and port 27017 for MongoDB
 
 
-Dependencies:
+#About this app
+
+On the frontpage user can see all posts. Front page also 
+
+
+#Dependencies:
+
 Frontend: react, react-router-dom, js-cookie
+
 Backend: express, dotenv, mongoose, express-validator, jsonwebtoken, uuid, bcrypt
+
 App uses concurrently to run both front- and backend at same time in develpoment mode.
+
+
 
 
 The web application uses Express-js in backend and React in frontend.
@@ -19,7 +31,10 @@ Backend uses uuidv4 to give posts and comments IDs in order to handle them and
 to find correct comments for each post and correct posts.
 Passwords are salted and hashed with bcrypt.
 
-Backend calls
+
+
+#Backend calls
+
 POST "/users/register" is used to register a new user.
 
 POST "/users/login" is used to login
