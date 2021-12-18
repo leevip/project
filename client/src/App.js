@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Container from './components/Container';
 import Post from './components/Post';
 import UserProfile from './components/UserProfile';
+import Menu from './components/Menu';
 
 function App() {
   const [jwt, setJwt] = useState("")
@@ -23,6 +24,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Menu jwt={jwt} setJwt={setJwt} user={user} setUser={setUser}/>
         <Routes>
           <Route path="/" element= {<Container jwt={jwt} setJwt={setJwt} user={user} setUser={setUser}/>}/>
           <Route path="/register" element= {<Register jwt={jwt} setJwt={setJwt} setUser={setUser}/>}/>

@@ -49,3 +49,11 @@
   width: 75%;
   height: 100px;
 }
+
+.menu{
+  background-color: aquamarine;
+  height: fit-content;
+  padding-right: 2.5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
