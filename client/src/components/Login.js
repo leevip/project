@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Cookies from 'js-cookie'
 
-//Login form. 
+//Login form. Message is used to inform user from invalid input. 
 
 function Login ({setJwt, setUser}) {
     const [userData, setUserData] = useState({})

@@ -2,6 +2,9 @@ import {useState} from 'react'
 import {Link, Navigate} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
+//Register view. Message is used to inform user from invalid input. 
+//When/If user is logged in they are redirected to main page
+
 function Register({jwt, setJwt, setUser}) {
     const [userData, setUserData] = useState({})
     const [message, setMessage] = useState("")

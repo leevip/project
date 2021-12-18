@@ -7,6 +7,7 @@ const { body, validationResult } = require('express-validator');
 
 
 //Creates a new user and saves the user in database. Then redirects to login
+//Password is salted and hashed and then stored to database
 router.post('/register',
 body("username").isLength({min: 3, max: 20}).trim().escape(),
 body("password").isLength({min: 8}),
