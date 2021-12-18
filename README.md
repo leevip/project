@@ -11,8 +11,8 @@ App currently uses port 3000 for frontend, port 1234 for backend and port 27017 
 
 #About this app
 
-On the frontpage user can see all posts. Front page also 
-
+On the frontpage user can see all posts. Posts on the frontpage can be clicked to view comments and to comment the post if logged in. Frontpage also allows making a new post if logged in.
+When viewing a post usernames are clickable, clicking a username will show all posts by that user.
 
 #Dependencies:
 
