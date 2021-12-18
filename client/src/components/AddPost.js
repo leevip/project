@@ -7,7 +7,6 @@ function AddPost({jwt, user, setPosts, posts}) {
 
     const submit = (e) => {
         e.preventDefault()
-        console.log(newPost)
         fetch("/api/post", {
             method: "POST",
             headers: {
@@ -19,7 +18,6 @@ function AddPost({jwt, user, setPosts, posts}) {
         })
             .then(response => response.json())
             .then(data=> {
-                console.log(data)
                 setPosts([...posts, {
                     id: data.post_id,
                     author: data.author,
@@ -32,7 +30,7 @@ function AddPost({jwt, user, setPosts, posts}) {
     const onChange = (e) => {
         setNewPost({author: user.username, content: e.target.value})
     }
-    
+
     return (
         <div className='new-post'>
             <form onSubmit={submit} onChange={onChange}>

@@ -18,7 +18,6 @@ function AddComment({jwt, user, post, setComments, comments}) {
         })
             .then(response => response.json())
             .then(data=> {
-                console.log(data)
                 setComments([...comments, {
                     id: data.comment_id,
                     author: data.author,
