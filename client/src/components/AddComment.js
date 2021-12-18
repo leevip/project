@@ -1,5 +1,7 @@
 import {useState} from 'react'
 
+//New comment form
+
 function AddComment({jwt, user, post, setComments, comments}) {
     const [newComment, setNewComment] = useState({})
 

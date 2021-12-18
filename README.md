@@ -52,3 +52,25 @@ Takes username and content as parameters
 
 POST "/api/comment" is used to post a new comment to database
 Takes post id, username and content as parameters
+
+#Features
+
+Basic features 
+
+main page shows posts 
+
+posts can be clicked to view them and comments
+
+users can register and log in in order to post and comment
+
+MongoDB used as database
+
+site is usable with mobile device
+
+Other features
+
+React is used as frontend framework
+
+Usernames can be clicked in order to view users post history
+
+I am aiming at around 27-30 points

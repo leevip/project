@@ -1,5 +1,7 @@
 import React from 'react'
 
+//A comment show on a post
+
 function Comment ({comment}) {
     return (
         <div>

@@ -39,7 +39,7 @@ body("password").isLength({min: 8}),
     })
 });
 
-//Checks user information and returns data in cookie
+//Checks user information and returns data in cookie and a json message
 router.post('/login', (req, res) => {
     User.findOne({username: req.body.username}, (err, user) =>{
         if(err) throw err;

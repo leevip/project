@@ -1,5 +1,7 @@
 import {useState} from 'react'
 
+//Form to add a new post
+
 function AddPost({jwt, user, setPosts, posts}) {
     const [newPost, setNewPost] = useState({})
 
@@ -26,9 +28,11 @@ function AddPost({jwt, user, setPosts, posts}) {
                 }])
             })
     }
+
     const onChange = (e) => {
         setNewPost({author: user.username, content: e.target.value})
     }
+    
     return (
         <div className='new-post'>
             <form onSubmit={submit} onChange={onChange}>

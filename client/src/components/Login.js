@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Cookies from 'js-cookie'
 
+//Login form. 
+
 function Login ({setJwt, setUser}) {
     const [userData, setUserData] = useState({})
     const [message, setMessage] = useState("")

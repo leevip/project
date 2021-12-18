@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import AddComment from './AddComment';
 import Comment from './Comment';
 
+//Post when opened by clicking on frontpage or users post history
+
 function Post ({user, jwt}){
     const [post, setPost] = useState({})
     const [comments, setComments] = useState([])

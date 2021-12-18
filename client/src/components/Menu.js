@@ -3,7 +3,9 @@ import Login from './Login'
 import { Link } from 'react-router-dom'
 import Cookies from 'js-cookie'
 
-function Menu({jwt, setJwt, user, setUser}) {
+//Menu to allow logging in, registering and logging out
+
+function Menu({setJwt, user, setUser}) {
     const logOut = () => {
         Cookies.remove('jwt');
         setJwt("");
@@ -11,6 +13,7 @@ function Menu({jwt, setJwt, user, setUser}) {
     }
     return (
         <div className='menu'>
+            {user && <p>{user.username}</p>}
             {!user?.id?.length > 0 ?
                 <>
                     <p>Login</p>

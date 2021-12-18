@@ -2,6 +2,8 @@ import {useState, useEffect} from 'react';
 import AddPost from './AddPost';
 import ListPost from './ListPost';
 
+//Posts lists all posts for the frontpage
+
 const Posts = ({user, jwt}) => {
     const [posts, setPosts] = useState([])
 
