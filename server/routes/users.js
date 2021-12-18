@@ -6,10 +6,7 @@ const bcrypt = require("bcrypt");
 const { body, validationResult } = require('express-validator');
 
 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
+//Creates a new user and saves the user in database. Then redirects to login
 router.post('/register',
 body("username").isLength({min: 3, max: 20}).trim().escape(),
 body("password").isLength({min: 8}),
@@ -42,6 +39,7 @@ body("password").isLength({min: 8}),
     })
 });
 
+//Checks user information and returns data in cookie
 router.post('/login', (req, res) => {
     User.findOne({username: req.body.username}, (err, user) =>{
         if(err) throw err;

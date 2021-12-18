@@ -1,7 +1,9 @@
 Installation
 
 App uses MongoDB as database. 
+
 "npm install" installs both client and server dependencies
+
 "npm run dev" starts both client and server in development mode
 
 
