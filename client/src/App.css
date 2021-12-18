@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.code-block {
+  background-color: #51535a;
+  color: white;
+  white-space: pre-line;
+  text-align: left;
+  padding-left: 2.5%;
+  white-space: pre-wrap;
+}
+.comments {
+  background-color: #3e4046;
+  color: white;
+  white-space: pre-line;
+  text-align: left;
+  padding-left: 5%;
+  white-space: pre-wrap;
+}
+.username{
+  width: fit-content;
+  background-color: #4f5155;
+  color:aqua;
+  text-decoration: underline;
+}
+.new-post{
+  align-items: left;
+  background-color: #6d7075;
+}
+.post-input{
+  background-color: white;
+  width: 75%;
+  height: 100px;
+}
